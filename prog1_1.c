@@ -8,10 +8,10 @@ int main(){
     char line[65];
     fgets(line, 65, stdin);
     char *word;
-    word = strtok(line, " ");
+    word = strtok(line, " \n\t");
     while (word != NULL) {
         printf("=%s=\n", word);
-        word  = strtok(NULL, " ");
+        word  = strtok(NULL, " \n\t");
     }
  
 }
