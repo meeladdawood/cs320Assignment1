@@ -7,7 +7,7 @@ int main(){
 
     printf("Assignment #1-1, Meelad Dawood, mdawood2@sdsu.edu\n");
     char line[65];
-    printf(">");
+    printf("> ");
     fgets(line, 65, stdin);
     char *word;
     word = strtok(line, " \n\t");
@@ -16,6 +16,9 @@ int main(){
            if(!isdigit(word[i])){
 	       printf("STR ");
                break;
+	   } else if(isdigit(word[i]) && !isdigit(word[i+1])){
+               printf("STR ");
+               break;
 	   } else {
 	       printf("INT ");
                break;
@@ -23,6 +26,7 @@ int main(){
 	}
         word  = strtok(NULL, " \n\t");
     }
+    printf("\n");
  
 }
 
