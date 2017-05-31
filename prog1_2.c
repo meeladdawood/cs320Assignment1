@@ -5,7 +5,7 @@
 
 int main(){
 
-    printf("Assignment #1-1, Meelad Dawood, mdawood2@sdsu.edu\n");
+    printf("Assignment #1-2, Meelad Dawood, mdawood2@sdsu.edu\n");
     char line[65];
     printf("> ");
     fgets(line, 65, stdin);
