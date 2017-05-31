@@ -16,7 +16,7 @@ int main(){
            if(!isdigit(word[i])){
 	       printf("STR ");
                break;
-	   } else if(isdigit(word[i]) && !isdigit(word[i+1])){
+	   } else if(isdigit(word[i]) && isalpha(word[i+1])){
                printf("STR ");
                break;
 	   } else {
