@@ -22,15 +22,15 @@ int main() {
 			count++;
 			word = strtok(NULL, " \n\t");
 		}
-
-		if (count > 2) {
-			printf("ERROR! Incorrect number of tokens found.\n");
-			count = 0;
-			continue;
-		} else if(strlen(copy) > 21){
+		
+		if(strlen(copy) > 21){
                         FlushStdin();
                         printf("ERROR! Input string too long.\n");
                         continue;
+                } else if (count > 2) {
+			printf("ERROR! Incorrect number of tokens found.\n");
+			count = 0;
+			continue;
                 } else if (count == 0) {
 			printf("ERROR! Incorrect number of tokens found.\n");
 			count = 0;
