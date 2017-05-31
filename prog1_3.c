@@ -9,7 +9,7 @@ int main(){
     printf("Assignment #1-3, Meelad Dawood, mdawood2@sdsu.edu\n");
     while(1){
     char line[65];
-    printf("\n> ");
+    printf("> ");
     fgets(line, 65, stdin);
     char copy[65];
     strcpy(copy, line);
@@ -22,10 +22,15 @@ int main(){
     }
 
     if(count > 2){
-        printf("ERROR! Incorrect number of tokens found.");
+        printf("ERROR! Incorrect number of tokens found.\n");
         count =0;
 	continue;
-    } else {
+    } else  if(count == 0){
+        printf("ERROR! Incorrect number of tokens found.\n");
+        count =0;
+        continue;
+    } 
+     else {
        word = strtok(copy, " \n\t");
     while (word != NULL) {
         for(int i = 0; i< strlen(word);i++){
