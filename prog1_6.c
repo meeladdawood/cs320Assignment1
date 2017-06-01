@@ -9,13 +9,12 @@ int main(int argc, char *argv[]) {
 
 	int loops = 0;
 	int current = 0;
-	printf("%d", argc);
-	if(argc > 1 ){
-		 printf("Assignment #1-5, Meelad Dawood, mdawood2@sdsu.edu\n");
+	if(argc > 2 ){
+		 printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
 		 printf("ERROR! Program 6 accepts 1 command line argument.\n");
 		 exit(0);
-	} else if(argc == 1 && !isdigit(argv[0])){
-                 printf("Assignment #1-5, Meelad Dawood, mdawood2@sdsu.edu\n");
+	} else if(argc == 2 && strcmp(token(argv[1]),"STR ")==0){
+                 printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
                  printf("ERROR! Expected integer argument.\n");
 		 exit(0);
         } else {
