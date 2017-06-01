@@ -11,7 +11,7 @@ int main() {
 	while (1) {
 		char line[20];
 		printf("> ");
-		fgets(line, 30, stdin);
+		fgets(line, 21, stdin);
 		char copy[20];
 		strcpy(copy, line);
 		char *word;
@@ -23,7 +23,7 @@ int main() {
 			word = strtok(NULL, " \n\t");
 		}
 		
-		if(strlen(copy) > 21){
+		if(strlen(copy) >=  20){
                         FlushStdin();
                         printf("ERROR! Input string too long.\n");
                         continue;
@@ -35,7 +35,7 @@ int main() {
 			printf("ERROR! Incorrect number of tokens found.\n");
 			count = 0;
 			continue;
-		} else if(strcmp(strtok(copy,"\n"),leave)==0){
+		} else if(strcasecmp(strtok(copy,"\n"),leave)==0){
 			exit(0);
 		}  else {
 			word = strtok(copy, " \n\t");
