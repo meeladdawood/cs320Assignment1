@@ -18,7 +18,8 @@ int main(int argc, char *argv[]) {
                  printf("ERROR! Expected integer argument.\n");
 		 exit(0);
         } else {
-		loops = atoi(argv[0]);
+		loops = atoi(argv[1]);
+		printf("%d\n",loops);
 	}
 
 	while (current != loops) {
