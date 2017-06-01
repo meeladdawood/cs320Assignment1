@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 
 	int loops = 0;
 	int current = 0;
-	if(argc > 2 ){
+	if(argc > 2 || argc == 1 ){
 		 printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
 		 printf("ERROR! Program 6 accepts 1 command line argument.\n");
 		 exit(0);
@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
 		printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
 	} else {
 		loops = atoi(argv[1]);
+		current++;
 	}
 	
   	printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
