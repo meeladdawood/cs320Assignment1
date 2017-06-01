@@ -11,7 +11,7 @@ int main() {
 	while (1) {
 		char line[20];
 		printf("> ");
-		fgets(line, 21, stdin);
+		fgets(line, 30, stdin);
 		char copy[20];
 		strcpy(copy, line);
 		char *word;
@@ -23,8 +23,10 @@ int main() {
 			word = strtok(NULL, " \n\t");
 		}
 		
-		if(strlen(copy) >=  20){
-                        FlushStdin();
+		if(strlen(copy) >=  22){
+                       // FlushStdin();
+			//fflush(stdin);
+			fseek(stdin,0,SEEK_END);
                         printf("ERROR! Input string too long.\n");
                         continue;
                 } else if (count > 2) {
@@ -60,8 +62,7 @@ int main() {
 }
 
 void FlushStdin(void) {
-  int ch;
-  while(((ch = getchar()) !='\n') && (ch != EOF));
+    while (getchar() != EOF);
 }
 
 
