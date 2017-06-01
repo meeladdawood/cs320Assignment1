@@ -17,11 +17,13 @@ int main(int argc, char *argv[]) {
                  printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
                  printf("ERROR! Expected integer argument.\n");
 		 exit(0);
-        } else {
+        } else if(argc == 2 && strcmp(argv[1],"0")==0){ 
+		printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
+	} else {
 		loops = atoi(argv[1]);
-		printf("%d\n",loops);
 	}
-
+	
+  	printf("Assignment #1-6, Meelad Dawood, mdawood2@sdsu.edu\n");
 	while (current != loops) {
 		char line[65];
 		printf("> ");
