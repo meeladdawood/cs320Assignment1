@@ -3,16 +3,14 @@
 #include<string.h>
 #include<ctype.h>
 
-void FlushStdin(void);
-
 int main() {
 
 	printf("Assignment #1-4, Meelad Dawood, mdawood2@sdsu.edu\n");
 	while (1) {
-		char line[20];
+		char line[65];
 		printf("> ");
-		fgets(line, 30, stdin);
-		char copy[20];
+		fgets(line, sizeof(line) +1, stdin);
+		char copy[65];
 		strcpy(copy, line);
 		char *word;
 		word = strtok(line, " \n\t");
@@ -22,11 +20,8 @@ int main() {
 			count++;
 			word = strtok(NULL, " \n\t");
 		}
-		
-		if(strlen(copy) >=  22){
-                       // FlushStdin();
-			//fflush(stdin);
-			fseek(stdin,0,SEEK_END);
+	
+		if(strlen(copy) > 21){
                         printf("ERROR! Input string too long.\n");
                         continue;
                 } else if (count > 2) {
@@ -56,13 +51,7 @@ int main() {
 				}
 				word = strtok(NULL, " \n\t");
 			}
-			exit(0);
+			printf("\n");
 		}
 	}
 }
-
-void FlushStdin(void) {
-    while (getchar() != EOF);
-}
-
-
