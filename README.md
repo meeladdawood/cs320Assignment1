@@ -110,6 +110,7 @@ This program will read in a single command line argument of N-integer, if the us
 * The program should provide an error message if the user enters more than 2 tokens and when it is not in the specified format.
 * When quitting on the input of "quit". The input should be case insensitive.
 **How to compile/run:**
+
 ```
 //Compiling
 gcc prog1_6.c -o prog1_6
