@@ -38,6 +38,73 @@ User Input Goes Here
 ```
 
 #### prog1\_3
-#### prog1\_4
+**Description:**
+This program will prompt the user for a String with a right caret("> "). The input string will then be parsed on spaces, after the string has been tokenized. If there are more than two tokens, then the program would print out the appropriate error message and prompt the user to enter a string that contains one or two tokens. After one or two tokens are entered by the user,the program will  idenitify if the token is a String by printing out "STR " or an integer by printing out "INT ".
+ 
+**Constraints:**
+* The input String cannot be more than 65 characters, any extra characters will be ignored.
+* The program should provide an error message if the user enters more than 2 tokens 
 
+**How to compile/run:**
+```
+//Compiling
+gcc prog1_3.c -o prog1_3
+
+//Running
+./prog1_3 
+token1 token2 
+
+```
+#### prog1\_4
+**Description:**
+This program will prompt the user for a String with a right caret("> "). The input string will then be parsed on spaces, after the string has been tokenized. The program will either idenitify if the token is a String by printing out "STR " or an integer by printing out "INT ".
+ 
+**Constraints:**
+* The input String cannot be more than 65 characters, any extra characters will be ignored.
+
+**How to compile/run:**
+```
+//Compiling
+gcc prog1_4.c -o prog1_4
+
+//Running
+./prog1_4
+User Input Goes Here
+
+```
+
+#### prog1\_5
+**Description:**
+This program will prompt the user for a String with a right caret("> "). The input string will then be parsed on spaces, after the string has been tokenized. The program will either idenitify if the token is a String by printing out "STR " or an integer by printing out "INT ".
+ 
+**Constraints:**
+* The input String cannot be more than 65 characters, any extra characters will be ignored.
+
+**How to compile/run:**
+```
+//Compiling
+gcc prog1_5.c -o prog1_5
+
+//Running
+./prog1_5
+User Input Goes Here
+
+```
+#### prog1\_6
+**Description:**
+This program will prompt the user for a String with a right caret("> "). The input string will then be parsed on spaces, after the string has been tokenized. The program will either idenitify if the token is a String by printing out "STR " or an integer by printing out "INT ".
+ 
+**Constraints:**
+* The input String cannot be more than 65 characters, any extra characters will be ignored.
+
+**How to compile/run:**
+```
+//Compiling
+gcc prog1_6.c -o prog1_6
+
+//Running
+./prog1_6 token token
+User Input Goes Here
+
+```
 
