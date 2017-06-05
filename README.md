@@ -100,7 +100,7 @@ STRtoken
 ```
 ### prog1\_6
 **Description:**
-This program will read in a single command line argument of N-integer, if the user inputs more than one or zero command line arguments then an appropriate error message will be printed. After the user inputs a single integer command line argument. The program will peform the same as prog1_5.c expect this time, it will N times. The user can input "quit" to exit the program before entering data N times.
+This program will read in a single command line argument of N-integer, if the user inputs more than one or zero command line arguments then an appropriate error message will be printed. After the user inputs a single integer command line argument. The program will peform the same as prog1\_5.c expect this time, it will N times. The user can input "quit" to exit the program before entering data N times.
 
  
 **Constraints:**
@@ -122,6 +122,5 @@ STRtoken IntToken
 or 
 
 STRtoken
-
 ```
 
