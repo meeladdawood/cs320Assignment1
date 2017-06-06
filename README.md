@@ -92,9 +92,7 @@ gcc prog1_5.c -o prog1_5
 //Running
 ./prog1_5
 STRtoken IntToken
-
 or 
-
 STRtoken
 
 ```
@@ -109,6 +107,7 @@ This program will read in a single command line argument of N-integer, if the us
 * The input String cannot be more than 65 characters. If there are more than 65 characters, then an appropriate error message will be displayed.
 * The program should provide an error message if the user enters more than 2 tokens and when it is not in the specified format.
 * When quitting on the input of "quit". The input should be case insensitive.
+
 **How to compile/run:**
 
 ```
@@ -119,9 +118,7 @@ gcc prog1_6.c -o prog1_6
 ./prog1_6 IntCmdLineInput
 
 STRtoken IntToken
-
 or 
-
 STRtoken
 ```
 
