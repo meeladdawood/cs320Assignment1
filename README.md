@@ -116,7 +116,6 @@ gcc prog1_6.c -o prog1_6
 
 //Running
 ./prog1_6 IntCmdLineInput
-
 STRtoken IntToken
 or 
 STRtoken
